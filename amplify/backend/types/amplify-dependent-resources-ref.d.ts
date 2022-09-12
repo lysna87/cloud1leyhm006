@@ -1,6 +1,6 @@
 export type AmplifyDependentResourcesAttributes = {
     "auth": {
-        "cloud1leyhm006198730c1": {
+        "cloud1leyhm00640e07e94": {
             "IdentityPoolId": "string",
             "IdentityPoolName": "string",
             "UserPoolId": "string",
@@ -8,6 +8,12 @@ export type AmplifyDependentResourcesAttributes = {
             "UserPoolName": "string",
             "AppClientIDWeb": "string",
             "AppClientID": "string"
+        }
+    },
+    "storage": {
+        "s3cloud1leyhm006storagee8836882": {
+            "BucketName": "string",
+            "Region": "string"
         }
     }
 }

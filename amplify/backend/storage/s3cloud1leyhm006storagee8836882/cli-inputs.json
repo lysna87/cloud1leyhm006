@@ -1,0 +1,10 @@
+{
+  "resourceName": "s3cloud1leyhm006storagee8836882",
+  "bucketName": "cloud1leyhm006-storage-e8836882",
+  "policyUUID": "f98cd7d8",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE"
+  ]
+}

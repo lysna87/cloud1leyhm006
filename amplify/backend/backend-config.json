@@ -1,6 +1,6 @@
 {
   "auth": {
-    "cloud1leyhm006198730c1": {
+    "cloud1leyhm00640e07e94": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
@@ -23,6 +23,13 @@
           "EMAIL"
         ]
       }
+    }
+  },
+  "storage": {
+    "s3cloud1leyhm006storagee8836882": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": []
     }
   }
 }
