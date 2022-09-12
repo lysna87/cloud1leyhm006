@@ -11,7 +11,7 @@ import { Authenticator, withAuthenticator} from '@aws-amplify/ui-react'
 
 //4.
 Amplify.configure(awsmobile)
-//Amplify.configure(awsExports)
+//Amplify.configure(awsExports)//
 
 function Dashboard() {
  return(
