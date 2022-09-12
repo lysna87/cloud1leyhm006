@@ -17,7 +17,7 @@ function Dashboard() {
       {({ signOut, user }) => (
         <div className="App">
           <p>
-            Hey {user.username}, welcome to my channel, with auth!
+            Hey {user.username}, welcome to the Nuber Driver page
           </p>
           <button onClick={signOut}>Sign out</button>
         </div>
