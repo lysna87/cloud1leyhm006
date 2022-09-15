@@ -46,6 +46,8 @@ async function onChange(e){
             onChange={onChange}
           />
           <hr/>
+          <div className="def">
+          <button>Find A Fare</button></div>
           </div>
           </div>
           <br/>

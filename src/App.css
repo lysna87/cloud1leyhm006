@@ -26,7 +26,10 @@ img{
 
 }
 .def{
-  background-color: #0d3b0c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .App-header {
   background-color: #0d3b0c;

@@ -30,7 +30,7 @@ function goToLogin(e) {
   return (
     <div >
     {driverDash ? (
-      <div className="App"><button onClick={goToLogin}>Back to Login</button>
+      <div className="App"><button>User Settings</button><button onClick={goToLogin}>Back to Login</button>
     <header className="App-header">
       
       <Dashboard/>        
