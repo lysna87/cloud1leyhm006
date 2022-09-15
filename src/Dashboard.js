@@ -7,7 +7,7 @@ import awsmobile from './aws-exports';
 //3.
 //import {AmplifySignOut, withAuthenticator} from '@aws-amplify/ui-react'
 //import Authenticator
-import { Authenticator, CheckboxField, withAuthenticator} from '@aws-amplify/ui-react'
+import { Authenticator,  withAuthenticator} from '@aws-amplify/ui-react'
 
 //4.
 Amplify.configure(awsmobile)
@@ -20,8 +20,6 @@ async function onChange(e){
   await Storage.put(file.name, file, {level: 'private'})
     .then(result=> console.log(result))
     .catch(err => console.log(err + "error"));
-
-
 
 }
 
@@ -37,17 +35,21 @@ async function onChange(e){
         <div className="driverDiv">
         
         <p><img src="Nuber.png" alt="logo"></img></p>
+        
           <p>
-            Hey {user.username}, welcome to the Nuber Driver page. 
+            Hey <em>{user.username}</em>, welcome to the Nuber Driver page. 
           </p>
+          <hr/>
           <div>
+          <p>Do you need your license Verified? Click below to submit image.</p>
             <input type="file"
             onChange={onChange}
           />
+          <hr/>
           </div>
           </div>
           <br/>
-          <button onClick={signOut}>Sign out</button>
+          
         </div>
       )}
     </Authenticator>

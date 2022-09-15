@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #0d3b0c;
 }
 
 .App-logo {
@@ -12,10 +13,20 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-button {
-  padding-right:4px;
-  margin: 10px;
-  color:blue;
+input{
+  margin-right:10px;
+}
+
+
+img{
+  border-color: darkslategrey;
+  border-image: round;
+  border-width:4px;
+  border: 5px solid #555;
+
+}
+.def{
+  background-color: #0d3b0c;
 }
 .App-header {
   background-color: #0d3b0c;
@@ -32,6 +43,13 @@ button {
   align-items:left;
   justify-content: left;
   text-align: left;
+}
+
+button{
+  margin:10px;
+  border: 5px solid #555;
+  font-size: 1em;
+    word-wrap: break-word;
 }
 
 .App-link {

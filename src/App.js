@@ -29,12 +29,12 @@ function goToLogin(e) {
 //show driver dash button
   return (
     <div >
-    {driverDash ? (<div className="App"><button onClick={goToLogin}>Back to Login</button>
+    {driverDash ? (
+      <div className="App"><button onClick={goToLogin}>Back to Login</button>
     <header className="App-header">
       
       <Dashboard/>        
     
-      
       
     </header>
 
