@@ -1,21 +1,54 @@
 //import logo from './logo.svg';
 import './App.css';
 import Dashboard from './Dashboard';
-//import {Auth, Hub} from './aws-amplify';
+import React, {useState} from 'react';
+
 import '@aws-amplify/ui-react/styles.css';
 
 function App() {
 
+const [driverDash, setDriverDash] = useState(false);
+function goToDash(e) {
+  e.preventDefault();
+  setDriverDash(true);
+  console.log('You clicked login.');
+}
+function goToLogin(e) {
+  e.preventDefault();
+  setDriverDash(false);
+  console.log('You clicked sign out.');
+}
 
+//show driver dash button
   return (
-    <div className="App">
+    <div >
+    {driverDash ? (<div className="App"><button onClick={goToLogin}>Back to Login</button>
+    <header className="App-header">
+      
+      <Dashboard/>        
+    
+      
+      
+    </header>
+
+    </div>
+    
+    ) :  
+    (<div className="App">
+      <button onClick={goToDash}>Driver Dash</button>
       <header className="App-header">
       
-        <Dashboard/>        
+             
+    
       
-        
-        
-      </header>
+      
+    </header>
+      </div>
+      )}
+    
+
+
+    
     </div>
   );
 }
