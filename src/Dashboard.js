@@ -34,6 +34,7 @@ async function onChange(e){
 
       {({ signOut, user }) => (
         <div className="App">
+        <div className="driverDiv">
         
         <p>Placeholder for icon</p>
           <p>
@@ -44,6 +45,8 @@ async function onChange(e){
             onChange={onChange}
           />
           </div>
+          </div>
+          <br/>
           <button onClick={signOut}>Sign out</button>
         </div>
       )}
