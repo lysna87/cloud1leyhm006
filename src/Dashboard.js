@@ -1,6 +1,6 @@
 //1.
 import React from 'react';
-import Amplify from 'aws-amplify';
+import {Amplify, Storage} from 'aws-amplify';
 //2.
 //import awsExports from './aws-exports';
 import awsmobile from './aws-exports';
@@ -14,6 +14,18 @@ Amplify.configure(awsmobile)
 //Amplify.configure(awsExports)//
 
 function Dashboard() {
+async function onChange(e){
+  if(!e.target.files[0]) return
+  const file = e.target.files[0];
+  await Storage.put(file.name, file, {level: 'private'})
+    .then(result=> console.log(result))
+    .catch(err => console.log(err + "error"));
+
+
+
+}
+
+
  return(
     <Authenticator // Default to Sign Up screen
   
@@ -27,7 +39,11 @@ function Dashboard() {
           <p>
             Hey {user.username}, welcome to the Nuber Driver page. 
           </p>
-          <p>Placeholder for File upload</p>
+          <div>
+            <input type="file"
+            onChange={onChange}
+          />
+          </div>
           <button onClick={signOut}>Sign out</button>
         </div>
       )}
