@@ -42,7 +42,7 @@ function goToLogin(e) {
     
     ) :  
     (<div className="App">
-      <button onClick={goToDash}>Driver Dash</button>
+      <button onClick={goToDash}>Driver Dash</button><button onClick={goToDash}>User Dash</button>
       <header className="App-header">
       
              <img src="Nuber.png" alt="logo"></img>

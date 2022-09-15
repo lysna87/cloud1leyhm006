@@ -11,7 +11,7 @@ import { Authenticator, CheckboxField, withAuthenticator} from '@aws-amplify/ui-
 
 //4.
 Amplify.configure(awsmobile)
-//Amplify.configure(awsExports)//
+
 
 function Dashboard() {
 async function onChange(e){
@@ -36,7 +36,7 @@ async function onChange(e){
         <div className="App">
         <div className="driverDiv">
         
-        <p>Placeholder for icon</p>
+        <p><img src="Nuber.png" alt="logo"></img></p>
           <p>
             Hey {user.username}, welcome to the Nuber Driver page. 
           </p>
