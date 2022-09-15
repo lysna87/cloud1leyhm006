@@ -5,6 +5,7 @@ import React, {useState} from 'react';
 import {Amplify, Auth} from 'aws-amplify';
 import awsmobile from './aws-exports';
 
+
 import '@aws-amplify/ui-react/styles.css';
 //import { signUpFieldsWithoutDefault } from '@aws-amplify/ui';
 
@@ -44,7 +45,7 @@ function goToLogin(e) {
       <button onClick={goToDash}>Driver Dash</button>
       <header className="App-header">
       
-             
+             <img src="Nuber.png" alt="logo"></img>
     
       
       
