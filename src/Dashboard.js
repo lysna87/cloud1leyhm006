@@ -7,27 +7,32 @@ import awsmobile from './aws-exports';
 //3.
 //import {AmplifySignOut, withAuthenticator} from '@aws-amplify/ui-react'
 //import Authenticator
-import { Authenticator, withAuthenticator} from '@aws-amplify/ui-react'
+import { Authenticator, CheckboxField, withAuthenticator} from '@aws-amplify/ui-react'
 
 //4.
 Amplify.configure(awsmobile)
-//Amplify.configure(awsExports)
+//Amplify.configure(awsExports)//
 
 function Dashboard() {
  return(
-    <Authenticator>
+    <Authenticator // Default to Sign Up screen
+  
+    
+    >
+
       {({ signOut, user }) => (
         <div className="App">
+        
         <p>Placeholder for icon</p>
           <p>
-            Hey {user.username}, welcome to the Nuber Driver page
+            Hey {user.username}, welcome to the Nuber Driver page. 
           </p>
           <p>Placeholder for File upload</p>
           <button onClick={signOut}>Sign out</button>
         </div>
       )}
     </Authenticator>
- )
+ );
 }
 
 //Require Authentication
