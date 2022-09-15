@@ -2,9 +2,13 @@
 import './App.css';
 import Dashboard from './Dashboard';
 import React, {useState} from 'react';
+import {Amplify, Auth} from 'aws-amplify';
+import awsmobile from './aws-exports';
 
 import '@aws-amplify/ui-react/styles.css';
+//import { signUpFieldsWithoutDefault } from '@aws-amplify/ui';
 
+Amplify.configure(awsmobile)
 function App() {
 
 const [driverDash, setDriverDash] = useState(false);
@@ -16,6 +20,8 @@ function goToDash(e) {
 function goToLogin(e) {
   e.preventDefault();
   setDriverDash(false);
+  Auth.signOut();
+  //await 
   console.log('You clicked sign out.');
 }
 
